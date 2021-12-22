@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: org.example.steps.RunTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 26.141 s <<< FAILURE! - in org.example.steps.RunTest
+log in test.transitions to various sections  Time elapsed: 6.198 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //*[@id="main-blocks"]/div[1]/div[6]/a}
+Expected: exist
+Screenshot: file:/C:/Users/ded/IdeaProjects/Testing_projects/Testing3/target/surefire-reports/1639073663406.0.png
+Page source: file:/C:/Users/ded/IdeaProjects/Testing_projects/Testing3/target/surefire-reports/1639073663406.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-blocks"]/div[1]/div[6]/a"}
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-blocks"]/div[1]/div[6]/a"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-59EMMQ3', ip: '192.168.18.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d516def7b514eb5cf0c7a87b3da1d6e2, findElement {using=xpath, value=//*[@id="main-blocks"]/div[1]/div[6]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\ded\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:20554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:20554/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d516def7b514eb5cf0c7a87b3da1d6e2
+
+log in test.download file  Time elapsed: 6.195 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //*[@id="main-blocks"]/div[2]/div[9]/a}
+Expected: exist
+Screenshot: file:/C:/Users/ded/IdeaProjects/Testing_projects/Testing3/target/surefire-reports/1639073669657.1.png
+Page source: file:/C:/Users/ded/IdeaProjects/Testing_projects/Testing3/target/surefire-reports/1639073669657.1.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-blocks"]/div[2]/div[9]/a"}
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-blocks"]/div[2]/div[9]/a"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-59EMMQ3', ip: '192.168.18.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d516def7b514eb5cf0c7a87b3da1d6e2, findElement {using=xpath, value=//*[@id="main-blocks"]/div[2]/div[9]/a}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\ded\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:20554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:20554/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d516def7b514eb5cf0c7a87b3da1d6e2
+

@@ -1,0 +1,3 @@
+org\example\AllureLogAspect.class
+org\example\steps\RunTest.class
+org\example\steps\MyStepdefs.class

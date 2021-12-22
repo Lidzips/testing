@@ -1,0 +1,8 @@
+org\example\DownloadPage.class
+org\example\ConfProperties.class
+org\example\steps\MyStepdefs.class
+org\example\TestSuite.class
+org\example\LoginTest.class
+org\example\steps\RunTest.class
+org\example\AllureLogAspect.class
+org\example\CheckUserInfo.class
