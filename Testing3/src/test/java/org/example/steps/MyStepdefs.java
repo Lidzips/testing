@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -23,14 +24,19 @@ public class MyStepdefs {
         sleep(500);
     }
 
-    @When("press element with xPath {string}")
+    @When("press element with title {string}")
     public void pressElementByXPath(String link) {
-        $(By.xpath(link)).should(exist).click();
+        $(byAttribute("title", link)).should(exist).click();
     }
 
     @And("type to input with name {string} text: {string}")
     public void typeToInputWithNameText(String fieldName, String login) {
         $(By.name(fieldName)).should(exist).setValue(login);
+    }
+
+    @And("type to input with name {string} text: {string} and press enter")
+    public void typeToInputWithNameTextAndPressEnter(String fieldName, String login) {
+        $(By.name(fieldName)).should(exist).setValue(login).pressEnter();;
     }
 
     @And("press element with name {string}")
@@ -48,10 +54,10 @@ public class MyStepdefs {
         $(byId(controlId)).shouldHave(text(text));
     }
 
-    @And("try to download from link with xPath {string}")
-    public void downloadFile(String xPath){
+    @And("try to download from link near it")
+    public void downloadFile(){
         try {
-            File report = $(byXpath(xPath)).download();
+            File report = $(byXpath("//*[@id=\"tab1\"]/p[3]/a")).download();
             System.out.println("FILE Path: " + report.getPath());
 
         } catch (FileNotFoundException e) {
@@ -59,13 +65,8 @@ public class MyStepdefs {
         }
     }
 
-    @Then("wait until element with xPath {string} disappears")
+    @Then("wait until element with text {string} disappears")
     public void waitUntilElementWithNameDisappears(String elementName) {
         $(By.name(elementName)).should(disappear);
-    }
-
-    @Then("element with xPath {string} should have text {string}")
-    public void elementWithXPathShouldHaveText(String arg0, String arg1) {
-        $(By.xpath(arg0)).shouldHave(exactText(arg1));
     }
 }
